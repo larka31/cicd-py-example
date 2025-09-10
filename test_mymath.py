@@ -15,3 +15,7 @@ def test_add_string__expect_exception():
     with pytest.raises(TypeError):
         add_numbers(4, 'I DO NOT BELONG HERE')
 
+def test_add_foalt():
+    assert add_numbers(1.1, 2.2) == 3.3
+
+
